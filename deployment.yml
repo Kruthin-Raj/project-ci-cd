@@ -12,6 +12,8 @@ spec:
       labels:
         app: project2
     spec:
+      securityContext:
+        runAsNonRoot: true
       containers:
       - name: project2-container
         image: Kruthin-Raj/project2:latest
